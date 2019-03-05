@@ -9,16 +9,7 @@ body {
     background-size: cover;
 }
 
-header {
-    text-align: center;
-    color: black;
-    font-size: 50px;
-    font-weight: 900;
-    margin-top: 10px;
-    text-shadow: 0 0 .8rem white;
-}
-
-.keys {
+.keyboard {
     display: flex;
     flex: 1;
     min-height: 70vh;
@@ -27,28 +18,22 @@ header {
 }
 
 .key {
-    border: .4rem solid white;
-    border-radius: .5rem;
+    border: 5px solid white;
+    border-radius: 5px;
     margin: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem .5rem;
-    transition: all .07s ease;
-    width: 10rem;
+    font-size: 30px;
+    padding: 20px;
+    width: 60px;
     text-align: center;
     color: black;
     background: rgba(0, 0, 0, 0.4);
     text-shadow: 0 0 .5rem black;
+    transition: all .07s ease;
 }
 
-.playing {
-    transform: scale(1.1);
-    border-color: #ffc600;
-    box-shadow: 0 0 1rem #ffc600;
-}
-
-kbd {
-    display: block;
-    font-size: 4rem;
+.key-pressed {
+    box-shadow: 2px 2px #888888;
+    border: 5px solid #ffc600;
 }
 
 .sound {
@@ -58,40 +43,18 @@ kbd {
     color: #ffc600;
 }
 
-.channels {
+.records {
     width: 100%;
-    min-height: 140px;
-}
-
-.channels .channel {
-    width: 23%;
+    height: 100px;
     border: 1px solid black;
-    padding: 10px;
+}
+
+.recordHolder {
     float: left;
+    padding: 25px 2%;
+    width: 20%;
 }
 
-#rec {
-    width: 80px;
-    font-size: 10px;
+.records button {
     padding: 10px;
-    border: 3px solid white;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.4);
-    text-shadow: 0 0 5px black;
-    margin-right: 25px;
-    float: right;
-    cursor: pointer;
-}
-
-#play {
-    width: 80px;
-    font-size: 10px;
-    padding: 10px;
-    border: 3px solid white;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.4);
-    text-shadow: 0 0 5px black;
-    float: right;
-    cursor: pointer;
-    margin-right: 15px;
 }
